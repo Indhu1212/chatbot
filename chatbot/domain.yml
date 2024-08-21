@@ -1,0 +1,43 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - provide_link  
+  - second_link
+  - third_link
+
+responses:
+  utter_greet:
+  - text: "Hello! How can I help you today?"
+
+  utter_third_link:
+  - text: "Consider this link for your question: [https://vitalflux.com/gaussian-mixture-models-what-are-they-when-to-use/#google_vignette](https://vitalflux.com/gaussian-mixture-models-what-are-they-when-to-use/#google_vignette)"
+  utter_second_link:
+  - text: "Refer this link for your queries: [https://towardsdatascience.com/linear-regression-in-real-life-4a78d7159f16](https://towardsdatascience.com/linear-regression-in-real-life-4a78d7159f16)"
+
+  utter_provide_link:
+  - text: "Here is the link you requested: [https://emeritus.org/blog/ai-and-ml-supervised-learning](https://emeritus.org/blog/ai-and-ml-supervised-learning/)"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://png.pngtree.com/background/20230512/original/pngtree-nature-background-sunset-wallpaer-with-beautiful-flower-farms-picture-image_2503007.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+

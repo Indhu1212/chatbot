@@ -1,0 +1,44 @@
+version: "3.1"
+
+stories:
+- story: provide link
+  steps:
+    - intent: provide_link
+    - action: utter_provide_link
+
+- story: greet and happy
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+
+- story: second_link
+  steps:
+    - intent: second_link
+    - action: utter_second_link
+
+- story: third_link
+  steps:
+    - intent: third_link
+    - action: utter_third_link
+
+- story: sad path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: sad path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_goodbye
